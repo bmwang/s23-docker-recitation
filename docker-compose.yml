@@ -6,4 +6,4 @@ services:
     cpus: 1
     mem_limit: 1024m
     ports:
-      - "8080:80"
+      - "8080"

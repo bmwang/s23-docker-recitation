@@ -36,10 +36,10 @@ def get_section_info(section_id: str):
     # TODO
     if section_id == "a":
         return {
-            "section": "section_name",
-            "start_time": "HH:MM",
-            "end_time": "HH:MM",
-            "ta": ["taName1", "taName2"]
+            "section": section_id,
+            "start_time": RECITATION_HOURS[section_id][0:4],
+            "end_time": RECITATION_HOURS[section_id][6:],
+            "ta": [ta1_name, ta2_name]
         }
     else:
         raise HTTPException(status_code=404, detail="Invalid section id")
